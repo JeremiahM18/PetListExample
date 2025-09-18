@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/petcare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/petcare"
@@ -17,6 +17,28 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/petType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/petType"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/petcare"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"/>
+
+    <Spinner
+        android:id="@+id/petSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/pTypes"
+        android:spinnerMode="dropdown"
+        android:dropDownHeight="249dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/petType"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"/>
+
 
 
 

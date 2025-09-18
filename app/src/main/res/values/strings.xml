@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ListViewExample</string>
     <string name="petcare">PetCare</string>
+    <string name="petType">Pet Type</string>
 </resources>
